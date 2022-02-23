@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimasyonOdev</title>
+    <style>
+        div{
+            width: 312px;
+            height: 312px;
+            background-color: pink;
+            transition: 5s;
+            animation: cube-animation 5s infinite;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+        }
+        @-webkit-keyframes cube-animation{
+                0%{
+                    left: 0%;
+                    top: 0%;
+                    transform: translate(0%,0%);
+                }
+                25%{
+                    left: 100%;
+                    top: 0%;
+                    transform: translate(-100%,0%);
+                }
+                50%{
+                    left: 100%;
+                    top: 100%;
+                    transform: translate(-100%,-100%);
+                }
+                75%{
+                    left: 0%;
+                    top: 100%;
+                    transform: translate(0%,-100%);
+                }
+                100%{
+                    left: 0%;
+                    top: 0%;
+                    transform: translate(0%,0%);
+                }
+            }
+
+                    
+      
+    </style>
+</head>
+<body>
+   <div></div>
+ 
+</body>
+</html>

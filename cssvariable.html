@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CssVariable</title>
+    <style>
+        :root{
+            --box-color:blue; 
+            /* BURADA TANIMLANAN DEĞİŞKENLER VE DEĞİŞKENLERE VERİLEN DEĞERLER DİĞER ALANLARDA
+            VAR() ÖZELLİĞİ KULLANILARAK ÇAĞIRILABİLİR */
+        }
+        .kutu1{
+            width: 50px;
+            height: 50px;
+            background-color: var(--box-color);
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+        .kutu2{
+            width: 50px;
+            height: 50px;
+            background-color: var(--box-color);
+            margin-top: 10px;
+            margin-left: 100px;
+        } 
+         .kutu3{
+            width: 50px;
+            height: 50px;
+            background-color: var(--box-color);
+            margin-top: 10px;
+            margin-left: 100px;
+        }  
+        .kutu4{
+            width: 50px;
+            height: 50px;
+            background-color: var(--box-color);
+            margin-top: 10px;
+            margin-left: 100px;
+        } 
+         .kutu5{
+            width: 50px;
+            height: 50px;
+            background-color: var(--box-color);
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu1"></div>
+    <div class="kutu2"></div>
+    <div class="kutu3"></div>
+    <div class="kutu4"></div>
+    <div class="kutu5"></div>
+</body>
+</html>

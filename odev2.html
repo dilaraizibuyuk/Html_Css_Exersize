@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        transition: 5s;
+        animation: cube-animation 5s ;
+        position: absolute;
+     
+    }
+    @-webkit-keyframes cube-animation{
+            0%{
+                left: 0%;
+                top: 0%;
+                transform: translate(0%,0%);
+            }
+            25%{
+                left: 25%;
+                top: 25%;
+                transform: translate(-25%,0%);
+            }
+            50%{
+                left: 50%;
+                top: 0%;
+                transform: translate(-50%,0%);
+            }
+            75%{
+                left: 75%;
+                top: 25%;
+                transform: translate(-75%,0%);
+            }
+           100%{
+               
+                left: 100%;
+                top: 0%;
+                transform: translate(-100%,0%);
+            }
+            
+         
+        }
+
+                
+  
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

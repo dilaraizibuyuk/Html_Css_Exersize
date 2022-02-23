@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="icon" href="favicon.ico">
+    <script>
+        function fun() {
+        alert("Giriş Yapıldı");
+        }
+        </script>
+    <style>
+ 
+        body{
+            width: 100%;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(245,86,108) 0%, rgba(250,106,95) 35%, rgba(252,123,83) 100%);
+        }
+        .content{
+            width: 25%;
+            height: 40vh;
+            background-color: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            border-radius: 30px;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        
+            padding: 30px 35px 20px;
+            
+        }
+        .icon-box {
+            background: rgb(254,239,236);
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+        .icon-box>i {
+            color: rgb(250,114,90);
+            font-size: 48px;
+            margin: 33px 36px;
+        }
+
+        input{
+            width: 100% !important;
+            border-radius: 25px;
+            height: 30px;
+            border: 4px solid white;
+            background: linear-gradient(90deg, rgba(253,184,177) 0%, rgba(255,192,174) 35%, rgba(255,200,169) 100%);
+            
+        }
+        .btn-login{
+            width: 80%;
+            border-radius: 25px;
+            height: 38px;
+            margin: 8px;
+            background-color: rgb(61,61,89);
+            border: none;
+            margin-left: 50px;
+            color: white;
+            position: absolute;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-left: 2px;
+            
+
+        }
+        input::placeholder{
+            color: rgb(255,50,61);
+            padding-left: 30px;
+
+        }
+        input:focus{
+            border: 4px solid white;
+            outline: none;
+            
+        }
+        .form-group {
+            position: relative;
+        }
+
+        .form-group>i {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 6px;
+            top: 5px;
+            color: rgb(255,50,61);
+            line-height: 31px;
+            text-align: center;
+            border-radius: 5px 0px 0px 5px;
+        }
+      
+        .main{
+            margin-top: 80px;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="main">
+            <div class="icon-box">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="form-group">
+        <input type="text" placeholder="Username">
+        <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="form-group" style="margin-top:15px">
+        <input type="password" placeholder="Password">
+        <i class="fa-solid fa-lock"></i>
+            </div>
+    </div>
+        <button onclick = "fun()" class="btn-login">Login</button>
+    </div>
+</div>
+</body>
+</html>
